@@ -21,7 +21,7 @@ function UpdateBlog() {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:6000/api/User/getOneUser/${id}`
+          `http://localhost:5000/api/User/getOneUser/${id}`
         );
         setUser(response.data);
         setIsLoading(false);
