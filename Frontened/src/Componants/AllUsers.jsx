@@ -9,7 +9,7 @@ const AllUsers = () => {
     const fetchUsers = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8000/api/User/getAllUsers"
+          "http://localhost:5000/api/User/getAllUsers"
         );
         setUsers(response.data);
       } catch (error) {

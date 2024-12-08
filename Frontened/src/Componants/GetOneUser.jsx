@@ -21,7 +21,7 @@ function UpdateBlog() {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8000/api/User/getOneUser/${id}`
+          `http://localhost:6000/api/User/getOneUser/${id}`
         );
         setUser(response.data);
         setIsLoading(false);
@@ -47,7 +47,7 @@ function UpdateBlog() {
     e.preventDefault();
     try {
       const response = await axios.put(
-        `http://localhost:8000/api/User/update/${id}`,
+        `http://localhost:5000/api/User/update/${id}`,
         user
       );
       console.log("User updated:", response.data);
@@ -69,7 +69,7 @@ function UpdateBlog() {
   const Delete = async () => {
     try {
       const response = await axios.delete(
-        `http://localhost:8000/api/User/delete/${id}`
+        `http://localhost:5000/api/User/delete/${id}`
       );
       console.log("User deleted:", response.data);
       setUser(null);

@@ -20,7 +20,7 @@ const Form = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/User/Create",
+        "http://localhost:5000/api/User/Create",
         formData
       );
       console.log("Data submitted successfully:", response.data);

@@ -9,7 +9,7 @@ app.use(cors());
 
 const connectDB = () =>{
 
-    mongoose.connect("mongodb://localhost:27017/Form")
+    mongoose.connect("mongodb+srv://sharmasimran0675:anmaya1244@cluster0.bg1lu.mongodb.net/Form")
     .then(() => {
       console.log("Connected to MongoDB");
     })
@@ -21,8 +21,8 @@ const connectDB = () =>{
   app.use('/api/User',Router);
 
 
-  app.listen(8000,()=>{
-    console.log("server is running on Port 8000")
+  app.listen(5000,()=>{
+    console.log("server is running on Port 5000")
   });
 
 
